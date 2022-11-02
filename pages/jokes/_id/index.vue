@@ -3,8 +3,8 @@
         <nuxt-link to="/jokes"> Back </nuxt-link>
         <br />
         <h2>Joke - {{ this.joke }}</h2>
-        <hr>
-        <small>Joke number  - {{ $route.params.id }}</small>
+        <hr />
+        <small>Joke number - {{ $route.params.id }}</small>
     </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     head() {
         return {
             title: this.joke,
-        }
+        };
     },
     async created() {
         const config = {
